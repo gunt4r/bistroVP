@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/header";
+import BucataList from "./components/bucate/BucataList";
+import Cart from "./components/Cos/Cart.js";
+import React, { useState } from "react";
 
 function App() {
+  const [VisibleCart, setVisibleCart] = useState(false);
+
+  const showCartHandler = () => {
+    setVisibleCart(true);
+  };
+
+  const hideCartHandler = () => {
+    setVisibleCart(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      {VisibleCart && <Cart onClick={hideCartHandler} />}
+      <Header changeCartVisibility={showCartHandler} />
+      <BucataList />
+    </React.Fragment>
   );
 }
 

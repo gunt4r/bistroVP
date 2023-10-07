@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/bistroVP/static/css/main.b6b7e103.css",
+    "main.js": "/bistroVP/static/js/main.1ff4d45d.js",
+    "static/media/image.jpg": "/bistroVP/static/media/image.2131bf1c1b5c681c4e30.jpg",
+    "index.html": "/bistroVP/index.html",
+    "main.b6b7e103.css.map": "/bistroVP/static/css/main.b6b7e103.css.map",
+    "main.1ff4d45d.js.map": "/bistroVP/static/js/main.1ff4d45d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6b7e103.css",
+    "static/js/main.1ff4d45d.js"
+  ]
+}
